@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+	</head>
+	<body>
+		<label>Código Produto</label>
+		<input id="cd_produto" size="35" type="text" name="cd_produto" class="database"/>
+		<input id="botao" type="button" value="Selecionar"/>
+		<label>Select Produto</label>
+		<select id="produto" class="database" name="tp_produto">
+			<option value="1">Soja</option>
+			<option value="3">Milho</option>
+			<option value="17">Trigo</option>
+		</select>
+		<input id="bt_json" type="button" value="Mostrar JSON"/>
+		<br>
+		<table id="table" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+    </table>	
+	<script src="js/jquery.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+</html>
